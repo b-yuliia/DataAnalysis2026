@@ -14,10 +14,7 @@
 * Оперативна пам'ять: мінімум 4 ГБ (через завантаження всього датасету в RAM).
 * Проект містить файл requirements.txt для швидкого розгортання середовища.
 ## Інструкція з запуску
-1. Клонуйте репозиторій:
-git clone https://github.com/ваш-логін/назва-репозиторію.git
-cd назва-репозиторію
-2. Створіть та активуйте віртуальне середовище:
+1. Створіть та активуйте віртуальне середовище:
 ```
 python -m venv venv
 ```
@@ -30,15 +27,15 @@ venv\Scripts\activate
 ```
 source venv/bin/activate
 ```
-3. Встановіть залежності з файлу:
+2. Встановіть залежності з файлу:
 ```
 pip install -r requirements.txt
 ```
-4. Завантажте файл household_power_consumption.txt із сайту https://archive.ics.uci.edu/dataset/235/individual%2Bhousehold%2Belectric%2Bpower%2Bconsumption та розташувати у теці Lab-2.
-5. Запустити Jupyter Notebook в терміналі: 
+3. Завантажте файл household_power_consumption.txt із сайту https://archive.ics.uci.edu/dataset/235/individual%2Bhousehold%2Belectric%2Bpower%2Bconsumption та розташувати у теці Lab-2.
+4. Запустити Jupyter Notebook в терміналі: 
 ```
 jupyter notebook
 ```
-6. Запустіть аналіз:
+5. Запустіть аналіз:
 
 Відкрийте Lab2part2.ipynb файл і виконайте всі комірки по черзі.
