@@ -2,7 +2,7 @@
 #define KEY_PROCESSOR_HPP
 
 enum class ProcessMode {
-    NORMAL, INVERT, GRAY, CANNY, BLUR, GLITCH
+    NORMAL, INVERT, GRAY, CANNY, BLUR, GLITCH, FACE
 };
 
 class KeyProcessor {

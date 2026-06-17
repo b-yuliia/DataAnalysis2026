@@ -38,9 +38,13 @@ void FrameProcessor::process(cv::Mat& frame, ProcessMode mode) {
             cv::merge(channels, frame);
             break;
         }
+        case ProcessMode::FACE:
+            faceDetector.updateFrame(frame);
+            faceDetector.drawFaces(frame);
+            break;
         default: break;
     }
 
-    cv::putText(frame, "Keys: 0-5 | ESC: Exit", cv::Point(20, 40), 
+    cv::putText(frame, "Keys: 0-5, F | ESC: Exit", cv::Point(20, 40), 
                 cv::FONT_HERSHEY_SIMPLEX, 0.8, cv::Scalar(0, 255, 255), 2);
 }

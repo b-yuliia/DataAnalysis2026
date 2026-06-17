@@ -1,5 +1,4 @@
 #include "KeyProcessor.hpp"
-#include <iostream>
 
 KeyProcessor::KeyProcessor() : currentMode(ProcessMode::NORMAL) {}
 
@@ -11,6 +10,8 @@ void KeyProcessor::process(int key) {
         case '3': currentMode = ProcessMode::CANNY;  break;
         case '4': currentMode = ProcessMode::BLUR;   break;
         case '5': currentMode = ProcessMode::GLITCH; break;
+        case 'f':
+        case 'F': currentMode = ProcessMode::FACE;   break;
     }
 }
 

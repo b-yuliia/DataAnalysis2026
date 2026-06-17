@@ -3,6 +3,7 @@
 
 #include <opencv2/opencv.hpp>
 #include "KeyProcessor.hpp"
+#include "FaceDetector.hpp"
 
 class FrameProcessor {
 public:
@@ -10,6 +11,9 @@ public:
     void process(cv::Mat& frame, ProcessMode mode);
     
     static int brightnessValue;
+
+private:
+    FaceDetector faceDetector;
 };
 
 #endif

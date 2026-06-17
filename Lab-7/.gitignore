@@ -16,6 +16,9 @@ lab_work
 *.a
 *.lib
 
+*.caffemodel
+*.prototxt
+
 .vscode/
 .idea/
 *.swp
